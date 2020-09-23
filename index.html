@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/mobile.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__border">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__top__left">
+                        <div class="header__top__left__bars">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                        <div class="header__top__left__logo"><img src="img/Portland.png" alt=""></div>
+                    </div>
+                    <div class="header__top__center">
+                        <ul class="header__top__center_ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Devices</a></li>
+
+                            <li><a href="#">Guarantee</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="header__top__rigth">
+                        <div class="header__top__rigth__cart">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="header__top__rigth__cart__text">CART<span
+                                    class="header__top__rigth__cart__count">0</span></span>
+
+                        </div>
+                        <div class="header__top__rigth__sign">
+                            sign in
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top__menu">
+                    <div class="header__top__menu__left">
+                        <div class="header__top__menu__left__categ">
+                            <ul class="header__top__menu__left__categ_nav">
+                                <li><a href="#">Top sales</a></li>
+                                <li><a href="#">Brand focus</a></li>
+                                <li><a href="#">Hi-Tech</a></li>
+                                <li><a href="#">Best sellers</a></li>
+                                <li><a href="#">projects</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__top__menu__rigth">
+                        <div class="header__top__menu__rigth__support">
+                            <a href="#">support</a></div>
+                        <div class="header__top__menu__rigth__search">
+                            <input type="text" class="header__top__menu__rigth__search"
+                                placeholder="I'm looking for...">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__slider">
+                <div class="container">
+                    <div data-select='0' class="header__slider__all-slide df">
+                        <div class="header__slider__title">
+                            <h2>iPhone 6 32Gb</h2>
+                            <h2>Black</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil tenetur
+                                deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi cupiditate
+                                a sequi quis quidem ut, esse veritatis alias!</p>
+                            <button class="header__slider__title__button">Buy now</button>
+                        </div>
+
+                        <div class="header__slider__cartoon">
+                            <img src="img/iphone.png" alt="">
+                        </div>
+                        <div class="header__slider__chevron"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div data-select='1' class="header__slider__all-slide comment-out df">
+                        <div class="header__slider__title">
+                            <h2>iPhone 6 32Gb</h2>
+                            <h2>White</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil tenetur
+                                deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi cupiditate
+                                a sequi quis quidem ut, esse veritatis alias!</p>
+                            <button class="header__slider__title__button">Buy now</button>
+                        </div>
+
+                        <div class="header__slider__cartoon">
+                            <img src="img/iphone.png" alt="">
+                        </div>
+                        <div class="header__slider__chevron"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+
+                <div class="header__slider__all-selector">
+
+                    <div class="header__slider__select" data-select='0'></div>
+                    <div class="header__slider__select" data-select='1'></div>
+                    <div class="header__slider__select" data-select='2'></div>
+
+                </div>
+                <!-- </div> -->
+            </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div class="main__sort">
+                <div class="main__sort__left">
+                    <span>sort by</span>
+                    <select name="" id="" class="main__sort__left__sort">
+                        <option value="">BEST MATCH</option>
+                    </select>
+                </div>
+                <div class="main__sort__center">
+                    <span>keywords</span>
+                    <input type="text" class="main__sort__center__keywords" placeholder="Tablet">
+
+                    <span>price</span>
+                    <input type="text" class="main__sort__center__price">
+                    <span>-</span>
+                    <input type="text" class="main__sort__center__price">
+
+
+                </div>
+                <div class="main__sort__rigth">
+                    <span>ship to</span>
+                    <select name="" id="" class="main__sort__rigth__ship">
+                        <option value="">usa</option>
+                        <option value="">ukraine</option>
+                        <option value="">russia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main__filter">
+                <a href=''>Фильтры</a>
+                <select name="" id="">
+                    <option value="">По цене</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="side-menu">
+        <div class="container df">
+
+            <div class="side-menu__wrapper">
+                <div class="side-menu__nav">
+                    <ul class="nav-menu">
+                        <li class="cat">
+                            <a href="#" class="cat__title" data-list="1">
+                                Top Sales
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="hide-list ">
+                                <li><a href="#">cell phones</a></li>
+                                <li><a href="#">camera</a></li>
+                                <li><a href="#">Max</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat">
+                            <a href="#" class="cat__title" data-list="1">
+                                Brand Focus
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                            <ul class="hide-list">
+                                <li><a href="#">My</a></li>
+                                <li><a href="#">Name</a></li>
+                                <li><a href="#">Max</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat"><a href="#" class="cat__title">Hi-Tech</a></li>
+                        <li class="cat"><a href="#" class="cat__title">Home</a></li>
+                        <li class="cat"><a href="#" class="cat__title">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="side-menu__available">
+                    <div class="side-menu__available__title">
+                        <h6>available</h6>
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-storage" class="check" name='check'>
+                        <label for="check-storage">
+                            <span></span> In Storage
+                        </label>
+                        <span class="side-menu__available__storage__value">45</span>
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-online" class="check" name='check'>
+                        <label for="check-online">
+                            <span></span> In Online Shop
+                        </label>
+                        <span class="side-menu__available__storage__value">15</span>
+                    </div>
+                    <div class="side-menu__available__brands">
+                        <div class="side-menu__available__title">
+                            <h6>Brands</h6>
+                            <a href="#">SEE ALL</a>
+                        </div>
+                        <div class="side-menu__available__storage df">
+                            <input type="checkbox" id="check-apple" class="check" name='check'>
+                            <label for="check-apple">
+                                <span></span> Apple
+                            </label>
+                            <div class="side-menu__available__storage__value">45</div>
+                        </div>
+
+
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-nokia" class="check" name='check'>
+                        <label for="check-nokia">
+                            <span></span> Nokia
+                        </label>
+                        <div class="side-menu__available__storage__value">18</div>
+                    </div>
+                </div>
+                <div class="side-menu__available__brands condition">
+                    <div class="side-menu__available__title">
+                        <h6>Condition</h6>
+                        <a href="#">SEE ALL</a>
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-new" class="check" name='check'>
+                        <label for="check-new">
+                            <span></span> New
+                        </label>
+
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-apple" class="check" name='check'>
+                        <label for="check-apple">
+                            <span></span> Manufacturer Refurbished
+                        </label>
+
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-apple" class="check" name='check'>
+                        <label for="check-apple">
+                            <span></span> Seller Refurbished
+                        </label>
+
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-apple" class="check" name='check'>
+                        <label for="check-apple">
+                            <span></span> Used
+                        </label>
+
+                    </div>
+                    <div class="side-menu__available__storage df">
+                        <input type="checkbox" id="check-apple" class="check" name='check'>
+                        <label for="check-apple">
+                            <span></span> For Parts or not Working
+                        </label>
+
+                    </div>
+
+
+                </div>
+                <div class="side-menu__available__delivery">
+                    <div class="side-menu__available__delivery__title">
+                        <h6>Delivery options</h6>
+
+                    </div>
+                    <div class="side-menu__available__delivery__cost">
+                        <div><input type="radio" name="delivery" id="delivery-free"> <label
+                                for="delivery-free">free</label>
+                        </div>
+                        <div><input type="radio" name="delivery" id="delivery-cost"> <label
+                                for="delivery-cost">$4.99</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="products">
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/AppleTV.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Apple TV</div>
+                    <div class="products__el__check-color">Black</div>
+                    <div class="products__el__price">49.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/Pebble Time.png" alt="">
+                    </i>
+                    <div class="products__el__title">Peple Time</div>
+                    <div class="products__el__check-color">red</div>
+                    <div class="products__el__price">29.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/withings smart body analyzer ws-50.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Withings Smart Body
+                        Analyzer ws-50</div>
+                    <div class="products__el__check-color">black</div>
+                    <div class="products__el__price">89.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/Ollo Clip New.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Ollo Clip New</div>
+                    <div class="products__el__check-color">silver</div>
+                    <div class="products__el__price">19.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/Fitbit Charge HR Heart Rate and Activity Tracker.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Fitbit Charge HR Heart Rate
+                        and Activity Tracker</div>
+                    <div class="products__el__check-color">black</div>
+                    <div class="products__el__price">19.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/Bose SoundLink On-Ear Headphones.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Bose SoundLink
+                        On-Ear Headphones</div>
+                    <div class="products__el__check-color">white</div>
+                    <div class="products__el__price">119.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/Apple® Watch Sport 38mm Silver Aluminum Case.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Apple Watch Sport 38mm
+                    </div>
+                    <div class="products__el__check-color">silver</div>
+                    <div class="products__el__price">49.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+                <div class="products__el">
+                    <i class="products__el__photo">
+                        <img src="img/SONOS PLAY-1 Wireless HiFi System.jpg" alt="">
+                    </i>
+                    <div class="products__el__title">Sonos Play-1 Wireless
+                        HiFi System</div>
+                    <div class="products__el__check-color">black</div>
+                    <div class="products__el__price">49.99$</div>
+                    <a class="products__el__btn" href="#">BY NOW</a>
+                </div>
+            </section>
+        </div>
+        </div>
+    </section>
+    <section class="pages-fon ">
+        <div class="container">
+            <div class="pages df">
+                <div class="pages__arrow"><i class="fas fa-chevron-left"></i></div>
+                <div class="pages__list">
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                    </ul>
+                </div>
+                <div class="pages__arrow"><i class="fas fa-chevron-right"></i></div>
+            </div>
+        </div>
+    </section>
+    <section class="sellers">
+        <div class="container">
+            <div class="sellers-pos">
+                <div class="sellers__title">
+                    <div>best sellers</div>
+                </div>
+
+                <div class="sellers__all-carts df">
+                    <div class="sellers__all-carts__cart">
+                        <div class="sellers__all-carts__cart__img">
+                            <img src="img/head.jpg" alt="">
+                        </div>
+
+                        <h6>Beanie</h6>
+                        <p>green</p>
+                        <div class="sellers__all-carts__cart__price">
+                            <span>39.99$</span><span>29.99$</span>
+                        </div>
+                    </div>
+                    <div class="sellers__all-carts__cart">
+                        <div class="sellers__all-carts__cart__img">
+                            <img src="img/shift.jpg" alt="">
+                        </div>
+                        <h6>Beanie</h6>
+                        <p>green</p>
+                        <div class="sellers__all-carts__cart__price">
+                            <span>39.99$</span><span>29.99$</span>
+                        </div>
+                    </div>
+                    <div class="sellers__all-carts__cart">
+                        <div class="sellers__all-carts__cart__img">
+                            <img src="img/jacket.jpg" alt="">
+                        </div>
+                        <h6>Beanie</h6>
+                        <p>green</p>
+                        <div class="sellers__all-carts__cart__price">
+                            <span>39.99$</span><span>29.99$</span>
+                        </div>
+                    </div>
+                    <div class="sellers__all-carts__cart">
+                        <div class="sellers__all-carts__cart__img">
+                            <img src="img/boots.jpg" alt="">
+                        </div>
+                        <h6>Beanie</h6>
+                        <p>green</p>
+                        <div class="sellers__all-carts__cart__price">
+                            <span>39.99$</span><span>29.99$</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="customrs">
+        <div class="container">
+            <div class="customers__main">
+                <div class="customers__main__title">
+                    <h1>What Our Customers Have to Say</h1>
+                    <p>Couple of Words About This Stories Section</p>
+                </div>
+                <div class="customers__main__all-coments">
+                    <div class="customers__main__all-coments__el">
+                        <div class="customers__main__all-coments__el__top">
+                            <div class="customers__main__all-coments__el__top__photo">
+                                <img src="img/customers1.jpg" alt="">
+                            </div>
+                            <div class="customers__main__all-coments__el__top__title">
+                                <h5>Cella</h5>
+                                <p>UX Expert</p>
+                            </div>
+                        </div>
+                        <p class="customers__main__all-coments__el__text">This I have produced as a scantling of Jack’s
+                            great eloquence and the force of his reasoning upon such abstruse matters.</p>
+
+
+                    </div>
+                    <div class="customers__main__all-coments__el">
+                        <div class="customers__main__all-coments__el__top">
+                            <div class="customers__main__all-coments__el__top__photo">
+                                <img src="img/customers2.jpg" alt="">
+                            </div>
+                            <div class="customers__main__all-coments__el__top__title">
+                                <h5>Cella</h5>
+                                <p>UX Expert</p>
+                            </div>
+                        </div>
+                        <p class="customers__main__all-coments__el__text">Looking cautiously round, to ascertain that
+                            they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+
+
+                    </div>
+                    <div class="customers__main__all-coments__el">
+                        <div class="customers__main__all-coments__el__top">
+                            <div class="customers__main__all-coments__el__top__photo">
+                                <img src="img/customers3.jpg" alt="">
+                            </div>
+                            <div class="customers__main__all-coments__el__top__title">
+                                <h5>Cella</h5>
+                                <p>UX Expert</p>
+                            </div>
+                        </div>
+                        <p class="customers__main__all-coments__el__text">This sounded a very good reason, and Alice was
+                            quite pleased to know it. 'I never thought of that before!' she said.</p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__nav">
+                <div class="footer__nav__logo">
+                    <img src="img/footer-logo.png" alt="">
+                </div>
+
+                <div class="footer__nav__networks">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+            </div>
+            <div class="footer__privacy">
+                <p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for
+                    having been born on a Friday.</p>
+                <div class="footer__privacy__rigth">
+                    <span>Privacy Policy</span> <span>Terms and Conditions</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
