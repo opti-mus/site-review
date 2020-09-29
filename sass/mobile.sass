@@ -11,7 +11,7 @@
     
 @media screen and ( max-width: 940px )
     .container
-        width: 95%
+        width: 90%
         padding: 0
     .main
         &__sort
@@ -20,6 +20,11 @@
             display: flex
     .header
         &__top
+            &__left
+                &__bars
+                    display: block
+                &__logo
+                    border-left: 2px solid #f0f2f7
             &__center
                 display: none
             &__menu
@@ -55,6 +60,7 @@
             &.myclass
                 width: 92%
 @media screen and ( max-width: 660px )
+   
     .products
         justify-content: space-evenly
         &__el
@@ -131,3 +137,11 @@
             & p 
                 display: none
     
+@media screen and ( max-width: 320px )
+    .header
+        &__slider
+            &__title
+                width: 40%
+            &__all-slide
+                img
+                    width: 200px

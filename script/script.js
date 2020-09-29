@@ -2,7 +2,8 @@ let list = document.querySelectorAll('.nav-menu li');
 let chevron = document.querySelectorAll('.cat__title i');
 let select = document.querySelectorAll('.header__slider__select');
 let comment = document.querySelectorAll('.header__slider__all-slide');
-let pagination = document.querySelectorAll('.pages__list ul li')
+let pagination = document.querySelectorAll('.pages__list ul li');
+
 
 function clearClass(a, i, clz) {
     a.forEach(el => {
@@ -10,13 +11,6 @@ function clearClass(a, i, clz) {
         else el.classList.remove(clz);
     })
 }
-
-// document.querySelectorAll('.products__el').forEach((item, inx, arrr) => {
-//     item.onclick = function () {
-//         clearClass(arrr, item, 'myclass');
-//         this.classList.toggle('myclass');
-//     }
-// })
 
 
 document.addEventListener('click', (e) => {
@@ -42,5 +36,22 @@ const hidePagination = function (pag) {
         }
     })
 }
-console.log(pagination);
+
 hidePagination(pagination)
+
+
+tns({
+    container: '#myslider',
+    items: 1,
+    loop: false,
+    gutter: 10,
+    arrowKeys: false,
+    controls: false,
+    slideBy: 'page',
+    autoplay: false,
+    navContainer: '.header__slider__all-selector',
+    autoWidth: false,
+    preventScrollOnTouch: 'force',
+    mouseDrag: true,
+    swipeAngle: false
+})

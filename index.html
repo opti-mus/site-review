@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/mobile.min.css">
@@ -71,44 +72,48 @@
 
             </div>
             <div class="header__slider">
-                <div class="container">
-                    <div data-select='0' class="header__slider__all-slide df">
-                        <div class="header__slider__title">
-                            <h2>iPhone 6 32Gb</h2>
-                            <h2>Black</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil tenetur
-                                deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi cupiditate
-                                a sequi quis quidem ut, esse veritatis alias!</p>
-                            <button class="header__slider__title__button">Buy now</button>
-                        </div>
+                <div class="container main-slide">
+                    <div id="myslider" class="wrapper-slider">
+                        <div class="header__slider__all-slide slide df active">
+                            <div class="header__slider__title">
+                                <h2>iPhone 6 32Gb</h2>
+                                <h2>Black</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil
+                                    tenetur
+                                    deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi
+                                    cupiditate
+                                    a sequi quis quidem ut, esse veritatis alias!</p>
+                                <button class="header__slider__title__button">Buy now</button>
+                            </div>
+                
+                                <img src="img/iphone.png" alt="">
+                           
 
-                        <div class="header__slider__cartoon">
-                            <img src="img/iphone.png" alt="">
                         </div>
-                        <div class="header__slider__chevron"><i class="fas fa-chevron-right"></i></div>
-                    </div>
-                    <div data-select='1' class="header__slider__all-slide comment-out df">
-                        <div class="header__slider__title">
-                            <h2>iPhone 6 32Gb</h2>
-                            <h2>White</h2>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil tenetur
-                                deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi cupiditate
-                                a sequi quis quidem ut, esse veritatis alias!</p>
-                            <button class="header__slider__title__button">Buy now</button>
-                        </div>
+                        <div class="header__slider__all-slide slide df">
+                            <div class="header__slider__title">
+                                <h2>iPhone 6 32Gb</h2>
+                                <h2>White</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil
+                                    tenetur
+                                    deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi
+                                    cupiditate
+                                    a sequi quis quidem ut, esse veritatis alias!</p>
+                                <button class="header__slider__title__button">Buy now</button>
+                            </div>
 
-                        <div class="header__slider__cartoon">
-                            <img src="img/iphone.png" alt="">
-                        </div>
-                        <div class="header__slider__chevron"><i class="fas fa-chevron-right"></i></div>
+                         
+                                <img src="img/iphone.png" alt="">
+                           
+                             </div>
                     </div>
                 </div>
 
-                <div class="header__slider__all-selector">
+                <div class="header__slider__all-selector slider-controls">
 
-                    <div class="header__slider__select" data-select='0'></div>
-                    <div class="header__slider__select" data-select='1'></div>
-                    <div class="header__slider__select" data-select='2'></div>
+                    <div class="header__slider__select" ></div>
+                    <div class="header__slider__select" ></div>
+                    
 
                 </div>
                 <!-- </div> -->
@@ -519,6 +524,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="script/script.js"></script>
 </body>
 

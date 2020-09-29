@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 940px) {
   .container {
-    width: 95%;
+    width: 90%;
     padding: 0;
   }
   .main__sort {
@@ -23,6 +23,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .header__top__left__bars {
+    display: block;
+  }
+  .header__top__left__logo {
+    border-left: 2px solid #f0f2f7;
   }
   .header__top__center {
     display: none;
@@ -149,5 +155,14 @@
   }
   .footer__privacy p {
     display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__slider__title {
+    width: 40%;
+  }
+  .header__slider__all-slide img {
+    width: 200px;
   }
 }
