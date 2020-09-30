@@ -51,7 +51,7 @@ tns({
     autoplay: false,
     navContainer: '.header__slider__all-selector',
     autoWidth: false,
-    preventScrollOnTouch: 'force',
-    mouseDrag: true,
+    preventScrollOnTouch: 'auto',
+    // touch:false,
     swipeAngle: false
 })
