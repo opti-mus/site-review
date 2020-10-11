@@ -2,7 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #a1a7bd;
+  color: #343e5c;
 }
 
 a {
@@ -72,9 +72,10 @@ body {
 }
 
 .header__top__left__logo {
-  padding: 23px;
-  border: none;
-  height: 100%;
+  font-size: 45px;
+  padding-left: 30px;
+  color: #1C1E23;
+  font-family: 'Cookie', sans-serif;
 }
 
 .header__top__rigth__cart {
@@ -158,7 +159,7 @@ body {
 .header__top__menu__left__categ_nav li a {
   text-transform: uppercase;
   font-size: 12px;
-  color: #b9bed1;
+  color: #515463;
 }
 
 .header__top__menu__left__categ_nav li a:hover {
@@ -174,12 +175,12 @@ body {
   display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
-  color: #b9bed1;
+  color: #515463;
   margin-right: 15px;
 }
 
 .header__top__menu__rigth__support a {
-  color: #b9bed1;
+  color: #515463;
 }
 
 .header__top__menu__rigth__support a:hover {
@@ -197,6 +198,7 @@ body {
 
 .header__top__menu__rigth__search input {
   width: 100%;
+  color: #515463;
 }
 
 .header__slider {
@@ -1014,11 +1016,6 @@ label:hover span:after {
   background: #E4E5E7;
 }
 
-.sellers__all-carts {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .sellers__title {
   background: #fff;
   text-align: center;
@@ -1036,6 +1033,8 @@ label:hover span:after {
 }
 
 .sellers__all-carts {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: #fff;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
@@ -1063,11 +1062,17 @@ label:hover span:after {
 }
 
 .sellers__all-carts__cart__img {
+  overflow: hidden;
   height: 234px;
-}
-
-.sellers__all-carts__cart__img img {
-  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .sellers__all-carts h6 {
@@ -1173,6 +1178,9 @@ label:hover span:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 50px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -1180,6 +1188,16 @@ label:hover span:after {
 .footer__nav__networks i {
   color: #ffffff;
   margin-left: 10px;
+}
+
+.footer__nav__networks i:hover {
+  color: #F77B4C;
+}
+
+.footer__nav__logo {
+  font-size: 45px;
+  color: #ffffff;
+  font-family: 'Cookie', sans-serif;
 }
 
 .footer__privacy {

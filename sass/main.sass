@@ -1,7 +1,7 @@
 *
     box-sizing: border-box
     font-family: 'Montserrat', sans-serif
-    color: #a1a7bd
+    color: #343e5c
 a
     text-decoration: none
 body
@@ -38,9 +38,10 @@ body
                 cursor: pointer
                 display: none
             &__logo
-                padding: 23px
-                border: none
-                height: 100%
+                font-size: 45px
+                padding-left: 30px
+                color: #1C1E23
+                font-family: 'Cookie', sans-serif
         &__rigth
             &__cart
                 display: inline-block
@@ -82,7 +83,6 @@ body
                 &:hover
                     background: #E3E8F0
         &__menu
-
             display: flex
             justify-content: space-between
             align-items: center
@@ -100,7 +100,7 @@ body
                             & a
                                 text-transform: uppercase
                                 font-size: 12px
-                                color: #b9bed1
+                                color: #515463
                                 &:hover
                                     color: #343e5c
                                     font-weight: bold
@@ -110,10 +110,10 @@ body
                     display: inline-block
                     text-transform: uppercase
                     font-size: 12px
-                    color: #b9bed1
+                    color: #515463
                     margin-right: 15px
                     & a
-                        color: #b9bed1
+                        color: #515463
                         &:hover
                             color: #343e5c
                             font-weight: bold
@@ -122,17 +122,18 @@ body
                     display: inline-block
                     width: 190px
                     font-size: 11px
-                    padding: 16px 0 
-                    
+                    padding: 16px 0
+
                     & input
                         width: 100%
+                        color: #515463
     &__slider
         position: relative
         background: #1C1E23
         height: 479px
         &__all-slide
             align-items: center
-            padding: 0 
+            padding: 0
             position: relative
             height: 473px
             img
@@ -179,7 +180,7 @@ body
             border-radius: 50%
             margin-right: 5px
             cursor: pointer
-            &.active 
+            &.active
                 background: #ffffff
         &__all-selector
             position: absolute
@@ -200,7 +201,7 @@ body
             color: #ffffff
             padding: 1rem
             border-radius: 5px
-            & select 
+            & select
                 padding: 0
                 margin: 0
                 min-width: 120px
@@ -216,14 +217,14 @@ body
         padding-bottom: 5px
         padding-left: 5px
         padding-right: 5px
-  
+
         &__left
             border-right: 2px solid #f0f2f7
             padding-right: 3px
             height: 100%
             display: flex
             align-items: center
-            
+
             text-transform: uppercase
             font-size: 11px
             & span
@@ -235,7 +236,7 @@ body
                 outline: none
                 color: #343e5c
                 font-weight: bold
-                font-size: 11px              
+                font-size: 11px
                 &:focus
                     outline: none
                     border: none !important
@@ -248,7 +249,7 @@ body
             flex: 1
             &__keywords
                 display: block
-                
+
                 max-width: 23%
                 height: 30px !important
                 color: #343e5c
@@ -263,7 +264,7 @@ body
                 height: 30px !important
                 border-radius: 30px !important
                 background: #F0F2F7 !important
-                margin: 0 
+                margin: 0
                 color: #343e5c
                 &:focus
                     outline: none !important
@@ -274,7 +275,7 @@ body
                 margin: 0
                 margin-right: 5px
         &__rigth
-            
+
             height: 100%
             display: flex
             align-items: center
@@ -285,7 +286,7 @@ body
             border-left: 2px solid #f0f2f7
             & span
                 white-space: nowrap
-            & label 
+            & label
                 color: #000000
                 margin: 0
                 margin-right: 10px
@@ -297,7 +298,7 @@ body
                 text-transform: uppercase
                 color: #343e5c
                 font-weight: bold
-                
+
                 &:focus
                     outline: none
                     border: none !important
@@ -345,7 +346,7 @@ body
             font-size: 11px
             padding-left: 10px
             padding-top: 4px
-            height: 100%  
+            height: 100%
 
 .cat
     position: relative
@@ -380,8 +381,7 @@ body
                 margin-top: 0
                 opacity: 1
                 margin-bottom: 0
-      
-     
+
 .df
     display: flex !important
 
@@ -582,7 +582,7 @@ label
         transition: .3s ease
         position: relative
         transform: scaleX(1)
-        overflow: hidden 
+        overflow: hidden
         cursor: pointer
         &__btn
             display: block
@@ -609,14 +609,14 @@ label
             text-overflow: ellipsis
             white-space: nowrap
             width: 150px
-            
+
         &__check-color
             text-transform: uppercase
             font-size: 13px
             margin-top: 5px
             margin-bottom: 5px
             margin-left: 70px
-            
+
         &__price
             color: #343e5c
             font-weight: bold
@@ -628,7 +628,7 @@ label
             bottom: 2%
             left: 20%
             height: 30px
-            
+
         &.myclass
             width: 492px
             padding: 20px 150px 90px 150px
@@ -646,9 +646,6 @@ label
             & .products__el__title
                 white-space: nowrap
                 text-overflow: ellipsis
-
-                
-
 
 .pages-fon
     background: #E4E5E7
@@ -698,8 +695,6 @@ label
     margin-bottom: 40px
 .sellers
     background: #E4E5E7
-    &__all-carts
-        flex-wrap: wrap
     &__title
         background: #fff
         text-align: center
@@ -713,6 +708,7 @@ label
         & div
             color: #343e5c
     &__all-carts
+        flex-wrap: wrap
         background: #fff
         border-bottom-right-radius: 3px
         border-bottom-left-radius: 3px
@@ -728,9 +724,14 @@ label
             &:last-child
                 border-right: none
             &__img
+                overflow: hidden
                 height: 234px
+                display: flex
+                align-items: center
+                justify-content: center
                 & img
-                    height: inherit
+                    // height: inherit
+                    
         & h6
             color: #343e5c
             font-weight: bold
@@ -789,12 +790,19 @@ label
     &__nav
         display: flex
         justify-content: space-between
+        align-items: center
         padding: 50px 0
         border-bottom: 1px solid rgba(255, 255, 255, 0.3)
         &__networks
             & i
                 color: #ffffff
                 margin-left: 10px
+                &:hover
+                    color: #F77B4C
+        &__logo
+            font-size: 45px
+            color: #ffffff
+            font-family: 'Cookie', sans-serif
     &__privacy
         display: flex
         justify-content: space-between

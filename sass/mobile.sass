@@ -4,10 +4,10 @@
             &__cart
                 width: 25%
                 &__img
-                    height: 230px
+                    // height: 230px
                     & img 
-                        width: 100%
-                        height: 100%
+                        // width: 100%
+                        // height: 100%
     
 @media screen and ( max-width: 940px )
     .container
@@ -86,7 +86,7 @@
                 width: 50%
                 border-bottom: 2px solid #f0f2f7
                 &__img
-                    height: 50%
+                    height: 60%
                 &:nth-child(2)
                     border-right: none
                     
@@ -94,6 +94,14 @@
     .header
         &__top
             padding-right: 30px
+            &__left
+                &__logo
+                    font-size: 30px
+                    padding-left: 10px
+                    height: 100%
+                    line-height: 80px
+                &__bars
+                    font-size: 20px
             &__rigth
                 &__sign
                     display: none
@@ -103,6 +111,8 @@
     .main__sort
         display: none
     .side-menu
+        .container 
+            width: 100%
         &__wrapper
             display: none
     .products
@@ -126,6 +136,13 @@
                 & .products__el__title
                     overflow: visible
                     white-space: normal
+    .sellers
+        &__all-carts
+            &__cart
+                &__img 
+                    img 
+                        width: 100%
+                        height: auto
     .customers
         &__main
             &__title
@@ -134,9 +151,13 @@
                 & p
                     font-size: 3.7vw
     .footer
+        &__nav 
+            &__logo 
+                font-size: 30px
         &__privacy
             & p 
                 display: none
+    
     
 @media screen and ( max-width: 320px )
     .header
