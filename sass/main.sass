@@ -137,7 +137,7 @@ body
             position: relative
             height: 473px
             img
-                width: 50%
+                width: 100%
                 height: auto
         &__title
             h2
@@ -731,7 +731,7 @@ label
                 justify-content: center
                 & img
                     // height: inherit
-                    
+
         & h6
             color: #343e5c
             font-weight: bold
@@ -771,6 +771,8 @@ label
                     display: flex
                     &__photo
                         width: 70px
+                        & picture
+                            width: inherit
                         & img
                             width: inherit
                             border-radius: 50%
@@ -811,11 +813,13 @@ label
         & p
             width: 600px
             font-style: italic
+            color: #ffffff
         &__rigth
             margin-left: 20px
             & span
                 margin-left: 25px
                 white-space: nowrap
+                color: #ffffff
 // tns slider
 .tns-nav-active
     background: #ffffff

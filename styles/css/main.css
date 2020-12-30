@@ -217,7 +217,7 @@ body {
 }
 
 .header__slider__all-slide img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -1143,6 +1143,10 @@ label:hover span:after {
   width: 70px;
 }
 
+.customers__main__all-coments__el__top__photo picture {
+  width: inherit;
+}
+
 .customers__main__all-coments__el__top__photo img {
   width: inherit;
   border-radius: 50%;
@@ -1213,6 +1217,7 @@ label:hover span:after {
 .footer__privacy p {
   width: 600px;
   font-style: italic;
+  color: #ffffff;
 }
 
 .footer__privacy__rigth {
@@ -1222,6 +1227,7 @@ label:hover span:after {
 .footer__privacy__rigth span {
   margin-left: 25px;
   white-space: nowrap;
+  color: #ffffff;
 }
 
 .tns-nav-active {
