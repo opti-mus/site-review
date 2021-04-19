@@ -847,11 +847,7 @@ label:hover span:after {
   background: #fff;
   border-radius: 3px;
   text-align: center;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
   position: relative;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
   overflow: hidden;
   cursor: pointer;
 }
@@ -902,8 +898,6 @@ label:hover span:after {
 .products__el__price {
   color: #343e5c;
   font-weight: bold;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100px;
