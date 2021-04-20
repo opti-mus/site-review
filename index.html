@@ -22,6 +22,13 @@
         <div id="side-menu">
         </div>
     </div>
+    <div class="cart">
+        <div class="cart__wrapper" data-cart = '1'>
+            <div class="cart__window">
+                
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header__border">
             <div class="container">
@@ -42,10 +49,12 @@
                         </ul>
                     </div>
                     <div class="header__top__rigth">
-                        <div class="header__top__rigth__cart">
+                        <div class="header__top__rigth__cart cart-btn">
                             <i class="fas fa-shopping-cart"></i>
-                            <span class="header__top__rigth__cart__text">CART<span
-                                    class="header__top__rigth__cart__count">0</span></span>
+                            <span class="header__top__rigth__cart__text">
+                                CART
+                                <span class="header__top__rigth__cart__count cart-count">0</span>
+                            </span>
 
                         </div>
                         <div class="header__top__rigth__sign">
@@ -301,114 +310,6 @@
                 </div>
             </div>
             <section class="products">
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        <picture>
-                            <source srcset="img/AppleTV.webp" type='image/webp'>
-                            <img src="img/AppleTV.jpg" alt="">
-                        </picture>   
-                    </i>
-                    <div class="products__el__title">Apple TV</div>
-                    <div class="products__el__check-color">Black</div>
-                    <div class="products__el__price">49.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        <picture>
-                            <source srcset="img/Pebble_Time.webp" type='image/webp'>
-                            <img src="img/Pebble Time.png" alt="">
-                        </picture>
-                    </i>
-                    <div class="products__el__title">Peple Time</div>
-                    <div class="products__el__check-color">red</div>
-                    <div class="products__el__price">29.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        
-                        <picture>
-                            <source srcset="img/withings.webp" type='image/webp'>
-                            <img src="img/withings smart body analyzer ws-50.jpg" alt="">
-                        </picture>
-                    </i>
-                    
-                    <div class="products__el__title">Withings Smart Body
-                        Analyzer ws-50</div>
-                    <div class="products__el__check-color">black</div>
-                    <div class="products__el__price">89.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        <picture>
-                            <source srcset="img/Ollo_Clip.webp" type='image/webp'>
-                            <img src="img/Ollo Clip New.jpg" alt="">
-                        </picture>
-                        
-                    </i>
-                    <div class="products__el__title">Ollo Clip New</div>
-                    <div class="products__el__check-color">silver</div>
-                    <div class="products__el__price">19.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        <picture>
-                            <source srcset="img/Fitbit_Charge.webp" type='image/webp'>
-                            <img src="img/Fitbit Charge HR Heart Rate and Activity Tracker.jpg" alt="">
-                        </picture>
-                        
-                    </i>
-                    <div class="products__el__title">Fitbit Charge HR Heart Rate
-                        and Activity Tracker</div>
-                    <div class="products__el__check-color">black</div>
-                    <div class="products__el__price">19.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        
-                        <picture>
-                            <source srcset="img/Headphones.webp" type='image/webp'>
-                            <img src="img/Bose SoundLink On-Ear Headphones.jpg" alt="">
-                        </picture>
-                    </i>
-                    <div class="products__el__title">Bose SoundLink
-                        On-Ear Headphones</div>
-                    <div class="products__el__check-color">white</div>
-                    <div class="products__el__price">119.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        <picture>
-                            <source srcset="img/watch.webp" type='image/webp'>
-                            <img src="img/Apple® Watch Sport 38mm Silver Aluminum Case.jpg" alt="">
-                        </picture>
-                        
-                    </i>
-                    <div class="products__el__title">Apple Watch Sport 38mm
-                    </div>
-                    <div class="products__el__check-color">silver</div>
-                    <div class="products__el__price">49.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
-                <div class="products__el">
-                    <i class="products__el__photo">
-                        
-                        <picture>
-                            <source srcset="img/wireless.webp" type='image/webp'>
-                                <img src="img/SONOS PLAY-1 Wireless HiFi System.jpg" alt="">
-                        </picture>
-                    </i>
-                    <div class="products__el__title">Sonos Play-1 Wireless
-                        HiFi System</div>
-                    <div class="products__el__check-color">black</div>
-                    <div class="products__el__price">49.99$</div>
-                    <a class="products__el__btn" href="#">BY NOW</a>
-                </div>
             </section>
         </div>
         </div>
@@ -594,6 +495,9 @@
             </div>
         </div>
     </footer>
+    <script type="module" src="script/shuffle.js"></script>
+    <script type="module" src="script/content.js"></script>
+    <script type="module" src="/script/cart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="script/side-menu.js"></script>
     <script src="script/script.js"></script>

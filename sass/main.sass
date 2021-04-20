@@ -614,7 +614,10 @@ label
             margin-top: 5px
             margin-bottom: 5px
             margin-left: 70px
-
+        &__cart
+            position: absolute;
+            right: 7px
+            bottom: 19px
         &__price
             color: #343e5c
             font-weight: bold
@@ -822,3 +825,62 @@ label
     background: #ffffff
 .wrapper-slider
     display: flex
+.cart
+    z-index: 998
+    display: none
+    &.open
+        display: block
+    &__wrapper
+        background-color: rgba(0, 0, 0, 0.3)
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 999
+    &__window
+        width: 600px
+        max-height: 500px
+        background-color: #fff
+        z-index: 99999
+        padding: 40px
+        overflow-y: auto
+        @media screen and ( max-width: 768px )
+            width: 85%
+            height: 80% 
+            padding: 10px
+    &__item
+        display: flex
+        padding: 10px
+        position: relative
+        margin-bottom: 15px
+        @media screen and ( max-width: 525px )
+            margin-bottom: 0
+    &__image
+        width: 80px
+        @media screen and ( max-width: 525px )
+            height: 100%
+            width: 20%
+    &__desc
+        color: #fff
+        margin-left: 20px
+    &__title
+        font-size: 20px
+        overflow: hidden;
+        text-overflow: ellipsis
+        white-space: nowrap
+        width: 270px
+        @media screen and ( max-width: 525px )
+            font-size: 15px
+            width: 150px
+        @media screen and ( max-width: 375px )
+            font-size: 12px
+            width: 100px
+    &__remove
+        position: absolute
+        right: 10px
+        font-size: 35px
+        cursor: pointer
