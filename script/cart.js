@@ -60,7 +60,7 @@ function showCart() {
   const btnCart = document.querySelector('.cart-btn')
   const cart = document.querySelector('.cart')
   const wrapper = document.querySelector('.cart__wrapper')
-
+  console.log('ok')
   btnCart.addEventListener('click', () => {
     cart.classList.add('open')
     document.body.style.overflowY = 'hidden'
