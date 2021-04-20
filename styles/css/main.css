@@ -1280,7 +1280,7 @@ label:hover span:after {
 @media screen and (max-width: 768px) {
   .cart__window {
     width: 85%;
-    height: 80%;
+    max-height: 80%;
     padding: 10px;
   }
 }
