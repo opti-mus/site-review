@@ -150,6 +150,7 @@
     white-space: nowrap;
     width: 100%;
     font-size: 14px;
+    margin: 10px 0;
   }
   .products__el.myclass {
     width: 94%;
@@ -187,5 +188,13 @@
   }
   .header__slider__all-slide img {
     width: 200px;
+  }
+  .products__el__title {
+    font-size: 10px;
+  }
+  .products__el__check-color {
+    font-size: .7rem;
+    margin-right: 1.2rem;
+    margin-bottom: 1rem;
   }
 }

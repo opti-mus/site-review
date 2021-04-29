@@ -77,9 +77,12 @@ function _toHTML(opt) {
           </picture>
       </i>
       <div class="products__el__title">${opt.title}</div>
-      <div class="products__el__check-color">${opt.color}</div>
-      <div class="products__el__price">${opt.price}</div>
-      <i class="fas fa-shopping-cart products__el__cart" data-content=${opt.id}></i>
+      <div class="products__el__desc">
+        <div class="products__el__check-color">${opt.color}</div>
+        <div class="products__el__price">${opt.price}</div>
+        <i class="fas fa-shopping-cart products__el__cart" data-content=${opt.id}></i>
+      </div>
+      
     </div>
   `
 }

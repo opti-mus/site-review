@@ -575,7 +575,7 @@ label
         background: #000
         margin-left: 10px
         margin-bottom: 10px
-        padding: 10px 17px
+        padding: 12px 17px
         background: #fff
         border-radius: 3px
         text-align: center
@@ -607,27 +607,26 @@ label
             text-overflow: ellipsis
             white-space: nowrap
             width: 150px
-
+            @media screen and ( max-width: 964px )
+                font-size: 13px
+        &__desc
+            display: flex
+            justify-content: space-between
+            align-items: baseline
+            width: 100%
+            @media screen and ( max-width: 964px )
+                margin-top: 15px
+            
         &__check-color
             text-transform: uppercase
             font-size: 13px
-            margin-top: 5px
-            margin-bottom: 5px
-            margin-left: 70px
-        &__cart
-            position: absolute;
-            right: 7px
-            bottom: 19px
+            @media screen and ( max-width: 564px )
+                font-size: 1rem
+                
+       
         &__price
             color: #343e5c
             font-weight: bold
-            transform: translateX(-50%)
-            width: 100px
-            border-radius: 5px
-            position: absolute
-            bottom: 2%
-            left: 20%
-            height: 30px
 
         &.myclass
             width: 492px
@@ -884,3 +883,12 @@ label
         right: 10px
         font-size: 35px
         cursor: pointer
+    &__buy
+        background-color: #141518
+        color: #FFF
+        border-radius: 5px
+        padding: 0 10px
+        margin-left: 10px
+        line-height: 35px
+        display: inline-block
+        

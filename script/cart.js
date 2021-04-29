@@ -33,29 +33,45 @@ function _drawCart(opt) {
         <div class="cart__title">${opt.title}</div>
         <p class="cart__price">${opt.price}</p>
     </div>
-    <span class="cart__remove">&times</span>
+    <span class="cart__remove" data-remove=${opt.id}>&times</span>
   </div>  
+  
   `
 }
 
 function fillCart(drawItem) {
   const cart = document.querySelector('.cart__window')
   const cartCount = document.querySelector('.cart-count')
+
   let elems = ''
   if (!localStorage.getItem('cart')) {
     cart.innerHTML = 'Ваша корзина пуста!'
+    cartCount.innerHTML  = 0
     return
   }
 
   let itemsCart = localStorage.getItem('cart').split(';')
   cartCount.innerHTML = itemsCart.length
-
+  removeItemCart(cart)
   itemsCart.forEach((el) => {
     elems += drawItem(JSON.parse(el))
   })
+  elems += `<a href='#' class="cart__buy">Купить</a>`
   cart.innerHTML = elems
 }
-
+function removeItemCart(cart) {
+  let lsItem = localStorage.getItem('cart').split(';')
+  let arr = []
+  cart.addEventListener('click', (e) => {
+    const id = e.target.dataset.remove
+    if (id) {
+      arr = lsItem.filter((el) => JSON.parse(el).id != +id)
+      localStorage.setItem('cart', arr.join(';'))
+      fillCart(_drawCart)
+    }
+    
+  })
+}
 function showCart() {
   const btnCart = document.querySelector('.cart-btn')
   const cart = document.querySelector('.cart')
