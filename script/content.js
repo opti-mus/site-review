@@ -69,7 +69,7 @@ export const items = shuffle([
 
 function _toHTML(opt) {
   return `
-    <div class="products__el" >
+    <div class="products__el" data-product=${opt.id}>
       <i class="products__el__photo">
           <picture>
               <source srcset=${opt.imgURL}.webp type='image/webp'>
