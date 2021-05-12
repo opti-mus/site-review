@@ -1,499 +1,512 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portland</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
-    <link rel="stylesheet" href="styles/css/side-menu.css">
-    <link rel="stylesheet" href="styles/css/skeleton.css">
-    <link rel="stylesheet" href="styles/css/main.min.css">
-    <link rel="stylesheet" href="styles/css/mobile.min.css">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="styles/css/side-menu.css" />
+    <link rel="stylesheet" href="styles/css/skeleton.css" />
+    <link rel="stylesheet" href="styles/css/main.min.css" />
+  </head>
 
-<body>
-    <div class="side-menu-wrapper" data-modal='1'>
-        <div id="side-menu">
-        </div>
+  <body>
+    <div class="side-menu-wrapper" data-modal="1">
+      <div id="side-menu"></div>
     </div>
     <div class="cart">
-        <div class="cart__wrapper" data-cart = '1'>
-            <div class="cart__window">
-                
-            </div>
-        </div>
+      <div class="cart__wrapper" data-cart="1">
+        <div class="cart__window"></div>
+      </div>
     </div>
     <header class="header">
-        <div class="header__border">
-            <div class="container">
-                <div class="header__top">
-                    <div class="header__top__left">
-                        <div class="header__top__left__bars">
-                            <i class="fas fa-bars bars"></i>
-                        </div>
-                        <div class="header__top__left__logo">Portland</div>
-                    </div>
-                    <div class="header__top__center">
-                        <ul class="header__top__center_ul">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Devices</a></li>
-
-                            <li><a href="#">Guarantee</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__top__rigth">
-                        <div class="header__top__rigth__cart cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="header__top__rigth__cart__text">
-                                CART
-                                <span class="header__top__rigth__cart__count cart-count">0</span>
-                            </span>
-
-                        </div>
-                        <div class="header__top__rigth__sign">
-                            sign in
-                        </div>
-                    </div>
-                </div>
-                <div class="header__top__menu">
-                    <div class="header__top__menu__left">
-                        <div class="header__top__menu__left__categ">
-                            <ul class="header__top__menu__left__categ_nav">
-                                <li><a href="#">Top sales</a></li>
-                                <li><a href="#">Brand focus</a></li>
-                                <li><a href="#">Hi-Tech</a></li>
-                                <li><a href="#">Best sellers</a></li>
-                                <li><a href="#">projects</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="header__top__menu__rigth">
-                        <div class="header__top__menu__rigth__support">
-                            <a href="#">support</a></div>
-                        <div class="header__top__menu__rigth__search">
-                            <input type="text" class="header__top__menu__rigth__search"
-                                placeholder="I'm looking for...">
-                        </div>
-
-                    </div>
-                </div>
-
+      <div class="header__border"></div>
+      <div class="container">
+        <div class="header-top">
+          <div class="header-top__left">
+            <div class="header-top__bars">
+              <i class="fas fa-bars bars"></i>
             </div>
-            <div class="header__slider">
-                <div class="container main-slide">
-                    <div id="myslider" class="wrapper-slider">
-                        <div class="header__slider__all-slide slide df active">
-                            <div class="header__slider__title">
-                                <h2>iPhone 6 32Gb</h2>
-                                <h2>Black</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil
-                                    tenetur
-                                    deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi
-                                    cupiditate
-                                    a sequi quis quidem ut, esse veritatis alias!</p>
-                                <button class="header__slider__title__button">Buy now</button>
-                            </div>
-                            <picture>
-                                <source srcset="img/iphone.webp" type='image/webp'>
-                                <img src="img/iphone.png" alt="">
-                            </picture>
-                            
-
-
-                        </div>
-                        <div class="header__slider__all-slide slide df">
-                            <div class="header__slider__title">
-                                <h2>iPhone 6 32Gb</h2>
-                                <h2>White</h2>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ea veniam nihil
-                                    tenetur
-                                    deleniti aliquid explicabo doloremque voluptates, pariatur perspiciatis quasi
-                                    cupiditate
-                                    a sequi quis quidem ut, esse veritatis alias!</p>
-                                <button class="header__slider__title__button">Buy now</button>
-                            </div>
-
-
-                            <picture>
-                                <source srcset="img/iphone.webp" type='image/webp'>
-                                <img src="img/iphone.png" alt="">
-                            </picture>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="header__slider__all-selector slider-controls">
-
-                    <div class="header__slider__select"></div>
-                    <div class="header__slider__select"></div>
-
-
-                </div>
-                <!-- </div> -->
+            <div class="header-top__logo">Portland</div>
+          </div>
+          <div class="header-top__center">
+            <ul class="header-top__nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Devices</a></li>
+              <li><a href="#">Guarantee</a></li>
+              <li><a href="#">About us</a></li>
+            </ul>
+          </div>
+          <div class="header-top__rigth">
+            <div class="header-top__cart cart-btn">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="header-top__text">
+                CART
+                <span class="header-top__count cart-count">0</span>
+              </span>
             </div>
+            <div class="header-top__sign">sign in</div>
+          </div>
+        </div>
+        <div class="header-top__menu header-menu">
+          <div class="header-menu__left">
+            <div class="header-menu__categ">
+              <ul class="header-menu__categ">
+                <li><a href="#">Top sales</a></li>
+                <li><a href="#">Brand focus</a></li>
+                <li><a href="#">Hi-Tech</a></li>
+                <li><a href="#">Best sellers</a></li>
+                <li><a href="#">projects</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-menu__rigth">
+            <div class="header-menu__support">
+              <a href="#">support</a>
+            </div>
+            <div class="header-menu__search">
+              <input
+                type="text"
+                class="header-menu__input"
+                placeholder="I'm looking for..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__slider slider">
+        <div class="container main-slide">
+          <div id="myslider" class="wrapper-slider">
+            <div class="slider__all-slide slide df active">
+              <div class="slider__title">
+                <h2>iPhone 6 32Gb</h2>
+                <h2>Black</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam ea veniam nihil tenetur deleniti aliquid explicabo
+                  doloremque voluptates, pariatur perspiciatis quasi cupiditate
+                  a sequi quis quidem ut, esse veritatis alias!
+                </p>
+                <button class="slider__button">Buy now</button>
+              </div>
+              <picture>
+                <source srcset="img/iphone.webp" type="image/webp" />
+                <img src="img/iphone.png" alt="" />
+              </picture>
+            </div>
+            <div class="slider__all-slide slide df">
+              <div class="slider__title">
+                <h2>iPhone 6 32Gb</h2>
+                <h2>White</h2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam ea veniam nihil tenetur deleniti aliquid explicabo
+                  doloremque voluptates, pariatur perspiciatis quasi cupiditate
+                  a sequi quis quidem ut, esse veritatis alias!
+                </p>
+                <button class="slider__button">Buy now</button>
+              </div>
+              <picture>
+                <source srcset="img/iphone.webp" type="image/webp" />
+                <img src="img/iphone.png" alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="slider__all-selector slider-controls">
+          <div class="slider__select"></div>
+          <div class="slider__select"></div>
+        </div>
+      </div>
     </header>
     <section class="main">
-        <div class="container">
-            <div class="main__sort">
-                <div class="main__sort__left">
-                    <span>sort by</span>
-                    <select name="" id="" class="main__sort__left__sort">
-                        <option value="">BEST MATCH</option>
-                    </select>
-                </div>
-                <div class="main__sort__center">
-                    <span>keywords</span>
-                    <input type="text" class="main__sort__center__keywords" placeholder="Tablet">
+      <div class="container">
+        <div class="main__sort sort">
+          <div class="sort__left">
+            <span>sort by</span>
+            <select name="" id="" class="sort__match">
+              <option value="">BEST MATCH</option>
+            </select>
+          </div>
+          <div class="sort__center">
+            <span>keywords</span>
+            <input type="text" class="sort__keywords" placeholder="Tablet" />
 
-                    <span>price</span>
-                    <input type="text" class="main__sort__center__price">
-                    <span>-</span>
-                    <input type="text" class="main__sort__center__price">
-
-
-                </div>
-                <div class="main__sort__rigth">
-                    <span>ship to</span>
-                    <select name="" id="" class="main__sort__rigth__ship">
-                        <option value="">usa</option>
-                        <option value="">ukraine</option>
-                        <option value="">russia</option>
-                    </select>
-                </div>
-            </div>
-            <div class="main__filter">
-                <a href=''>Фильтры</a>
-                <select name="" id="">
-                    <option value="">По цене</option>
-                </select>
-            </div>
+            <span>price</span>
+            <input type="text" class="sort__price" />
+            <span>-</span>
+            <input type="text" class="sort__price" />
+          </div>
+          <div class="sort__rigth">
+            <span>ship to</span>
+            <select name="" id="" class="sort__ship">
+              <option value="">usa</option>
+              <option value="">ukraine</option>
+              <option value="">russia</option>
+            </select>
+          </div>
         </div>
+        <div class="main__filter filter">
+          <a href="" class="filter__title">Фильтры</a>
+          <select name="" id="" class="filter__select">
+            <option value="">По цене</option>
+          </select>
+        </div>
+      </div>
     </section>
     <section class="side-menu">
-        <div class="container df">
-
-            <div class="side-menu__wrapper">
-                <div class="side-menu__nav">
-                    <ul class="nav-menu">
-                        <li class="cat">
-                            <a href="#" class="cat__title" data-list="1">
-                                Top Sales
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                            <ul class="hide-list ">
-                                <li><a href="#">cell phones</a></li>
-                                <li><a href="#">camera</a></li>
-                                <li><a href="#">Max</a></li>
-                            </ul>
-                        </li>
-                        <li class="cat">
-                            <a href="#" class="cat__title" data-list="1">
-                                Brand Focus
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                            <ul class="hide-list">
-                                <li><a href="#">My</a></li>
-                                <li><a href="#">Name</a></li>
-                                <li><a href="#">Max</a></li>
-                            </ul>
-                        </li>
-                        <li class="cat"><a href="#" class="cat__title">Hi-Tech</a></li>
-                        <li class="cat"><a href="#" class="cat__title">Home</a></li>
-                        <li class="cat"><a href="#" class="cat__title">Sale</a></li>
-                    </ul>
-                </div>
-                <div class="side-menu__available">
-                    <div class="side-menu__available__title">
-                        <h6>available</h6>
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-storage" class="check" name='check'>
-                        <label for="check-storage">
-                            <span></span> In Storage
-                        </label>
-                        <span class="side-menu__available__storage__value">45</span>
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-online" class="check" name='check'>
-                        <label for="check-online">
-                            <span></span> In Online Shop
-                        </label>
-                        <span class="side-menu__available__storage__value">15</span>
-                    </div>
-                    <div class="side-menu__available__brands">
-                        <div class="side-menu__available__title">
-                            <h6>Brands</h6>
-                            <a href="#">SEE ALL</a>
-                        </div>
-                        <div class="side-menu__available__storage df">
-                            <input type="checkbox" id="check-apple" class="check" name='check'>
-                            <label for="check-apple">
-                                <span></span> Apple
-                            </label>
-                            <div class="side-menu__available__storage__value">45</div>
-                        </div>
-
-
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-nokia" class="check" name='check'>
-                        <label for="check-nokia">
-                            <span></span> Nokia
-                        </label>
-                        <div class="side-menu__available__storage__value">18</div>
-                    </div>
-                </div>
-                <div class="side-menu__available__brands condition">
-                    <div class="side-menu__available__title">
-                        <h6>Condition</h6>
-                        <a href="#">SEE ALL</a>
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-new" class="check" name='check'>
-                        <label for="check-new">
-                            <span></span> New
-                        </label>
-
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-manuf" class="check" name='check'>
-                        <label for="check-manuf">
-                            <span></span> Manufacturer Refurbished
-                        </label>
-
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-seller" class="check" name='check'>
-                        <label for="check-seller">
-                            <span></span> Seller Refurbished
-                        </label>
-
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-used" class="check" name='check'>
-                        <label for="check-used">
-                            <span></span> Used
-                        </label>
-
-                    </div>
-                    <div class="side-menu__available__storage df">
-                        <input type="checkbox" id="check-work" class="check" name='check'>
-                        <label for="check-work">
-                            <span></span> For Parts or not Working
-                        </label>
-
-                    </div>
-
-
-                </div>
-                <div class="side-menu__available__delivery">
-                    <div class="side-menu__available__delivery__title">
-                        <h6>Delivery options</h6>
-
-                    </div>
-                    <div class="side-menu__available__delivery__cost">
-                        <div><input type="radio" name="delivery" id="delivery-free"> <label
-                                for="delivery-free">free</label>
-                        </div>
-                        <div><input type="radio" name="delivery" id="delivery-cost"> <label
-                                for="delivery-cost">$4.99</label>
-                        </div>
-                    </div>
-                </div>
+      <div class="container df">
+        <div class="side-menu__wrapper">
+          <div class="side-menu__nav">
+            <ul class="nav-menu">
+              <li class="cat">
+                <a href="#" class="cat__title" data-list="1">
+                  Top Sales
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+                <ul class="hide-list">
+                  <li><a href="#">cell phones</a></li>
+                  <li><a href="#">camera</a></li>
+                  <li><a href="#">Max</a></li>
+                </ul>
+              </li>
+              <li class="cat">
+                <a href="#" class="cat__title" data-list="1">
+                  Brand Focus
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+                <ul class="hide-list">
+                  <li><a href="#">My</a></li>
+                  <li><a href="#">Name</a></li>
+                  <li><a href="#">Max</a></li>
+                </ul>
+              </li>
+              <li class="cat"><a href="#" class="cat__title">Hi-Tech</a></li>
+              <li class="cat"><a href="#" class="cat__title">Home</a></li>
+              <li class="cat"><a href="#" class="cat__title">Sale</a></li>
+            </ul>
+          </div>
+          <div class="menu">
+            <div class="menu__title">
+              <h6>available</h6>
             </div>
-            <section class="products">
-            </section>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-storage"
+                class="check"
+                name="check"
+              />
+              <label for="check-storage"> <span></span> In Storage </label>
+              <span class="menu__value">45</span>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-online"
+                class="check"
+                name="check"
+              />
+              <label for="check-online"> <span></span> In Online Shop </label>
+              <span class="menu__value">15</span>
+            </div>
+            <div class="menu__brands">
+              <div class="menu__title">
+                <h6>Brands</h6>
+                <a href="#">SEE ALL</a>
+              </div>
+              <div class="menu__item df">
+                <input
+                  type="checkbox"
+                  id="check-apple"
+                  class="check"
+                  name="check"
+                />
+                <label for="check-apple"> <span></span> Apple </label>
+                <div class="menu__value">45</div>
+              </div>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-nokia"
+                class="check"
+                name="check"
+              />
+              <label for="check-nokia"> <span></span> Nokia </label>
+              <div class="menu__value">18</div>
+            </div>
+          </div>
+          <div class="side-menu__condition menu">
+            <div class="menu__title">
+              <h6>Condition</h6>
+              <a href="#">SEE ALL</a>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-new"
+                class="check"
+                name="check"
+              />
+              <label for="check-new"> <span></span> New </label>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-manuf"
+                class="check"
+                name="check"
+              />
+              <label for="check-manuf">
+                <span></span> Manufacturer Refurbished
+              </label>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-seller"
+                class="check"
+                name="check"
+              />
+              <label for="check-seller">
+                <span></span> Seller Refurbished
+              </label>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-used"
+                class="check"
+                name="check"
+              />
+              <label for="check-used"> <span></span> Used </label>
+            </div>
+            <div class="menu__item df">
+              <input
+                type="checkbox"
+                id="check-work"
+                class="check"
+                name="check"
+              />
+              <label for="check-work">
+                <span></span> For Parts or not Working
+              </label>
+            </div>
+          </div>
+          <div class="menu side-menu__delivery">
+            <div class="menu__title">
+              <h6>Delivery options</h6>
+            </div>
+            <div class="menu__cost">
+              <div>
+                <input type="radio" name="delivery" id="delivery-free" />
+                <label for="delivery-free">free</label>
+              </div>
+              <div>
+                <input type="radio" name="delivery" id="delivery-cost" />
+                <label for="delivery-cost">$4.99</label>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
+        <section class="products"></section>
+      </div>
     </section>
-    <section class="pages-fon ">
-        <div class="container">
-            <div class="pages df">
-                <div class="pages__arrow"><i class="fas fa-chevron-left"></i></div>
-                <div class="pages__list">
-                    <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                    </ul>
-                </div>
-                <div class="pages__arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
+    <section class="pages-fon">
+      <div class="container">
+        <div class="pages df">
+          <div class="pages__arrow"><i class="fas fa-chevron-left"></i></div>
+          <div class="pages__list">
+            <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">6</a></li>
+              <li><a href="#">7</a></li>
+              <li><a href="#">8</a></li>
+            </ul>
+          </div>
+          <div class="pages__arrow"><i class="fas fa-chevron-right"></i></div>
         </div>
+      </div>
     </section>
     <section class="sellers">
-        <div class="container">
-            <div class="sellers-pos">
-                <div class="sellers__title">
-                    <div>best sellers</div>
-                </div>
+      <div class="container">
+        <div class="sellers-pos">
+          <div class="sellers__title">
+            <div>best sellers</div>
+          </div>
 
-                <div class="sellers__all-carts df">
-                    <div class="sellers__all-carts__cart">
-                        <div class="sellers__all-carts__cart__img">
-                            <picture>
-                                <source srcset="img/head.webp" type='image/webp'>
-                                <img src="img/head.jpg" alt="">
-                            </picture>
-                        </div>
-
-                        <h6>Beanie</h6>
-                        <p>green</p>
-                        <div class="sellers__all-carts__cart__price">
-                            <span>39.99$</span><span>29.99$</span>
-                        </div>
-                    </div>
-                    <div class="sellers__all-carts__cart">
-                        <div class="sellers__all-carts__cart__img">
-                            
-                            <picture>
-                                <source srcset="img/shift.webp" type='image/webp'>
-                                <img src="img/shift.jpg" alt="">
-                            </picture>
-                        </div>
-                        <h6>Beanie</h6>
-                        <p>green</p>
-                        <div class="sellers__all-carts__cart__price">
-                            <span>39.99$</span><span>29.99$</span>
-                        </div>
-                    </div>
-                    <div class="sellers__all-carts__cart">
-                        <div class="sellers__all-carts__cart__img">
-                            
-                            <picture>
-                                <source srcset="img/jacket.webp" type='image/webp'>
-                                <img src="img/jacket.jpg" alt="">
-                            </picture>
-                        </div>
-                        <h6>Beanie</h6>
-                        <p>green</p>
-                        <div class="sellers__all-carts__cart__price">
-                            <span>39.99$</span><span>29.99$</span>
-                        </div>
-                    </div>
-                    <div class="sellers__all-carts__cart">
-                        <div class="sellers__all-carts__cart__img">
-                            
-                            <picture>
-                                <source srcset="img/boots.webp" type='image/webp'>
-                                <img src="img/boots.jpg" alt="">
-                            </picture>
-                        </div>
-                        <h6>Beanie</h6>
-                        <p>green</p>
-                        <div class="sellers__all-carts__cart__price">
-                            <span>39.99$</span><span>29.99$</span>
-                        </div>
-
-                    </div>
-
-                </div>
+          <div class="sellers__all-carts df">
+            <div class="sellers__cart">
+              <div class="sellers__img">
+                <picture>
+                  <source srcset="img/head.webp" type="image/webp" />
+                  <img src="img/head.jpg" alt="" />
+                </picture>
+              </div>
+              <h6>Beanie</h6>
+              <p>green</p>
+              <div>
+                <span class="sellers__price">39.99$</span>
+                <span class="sellers__price">29.99$</span>
+              </div>
             </div>
+
+            <div class="sellers__cart">
+              <div class="sellers__img">
+                <picture>
+                  <source srcset="img/shift.webp" type="image/webp" />
+                  <img src="img/shift.jpg" alt="" />
+                </picture>
+              </div>
+              <h6>Beanie</h6>
+              <p>green</p>
+              <div>
+                <span class="sellers__price">39.99$</span>
+                <span class="sellers__price">29.99$</span>
+              </div>
+            </div>
+
+            <div class="sellers__cart">
+              <div class="sellers__img">
+                <picture>
+                  <source srcset="img/jacket.webp" type="image/webp" />
+                  <img src="img/jacket.jpg" alt="" />
+                </picture>
+              </div>
+              <h6>Beanie</h6>
+              <p>green</p>
+              <div>
+                <span class="sellers__price">39.99$</span>
+                <span class="sellers__price">29.99$</span>
+              </div>
+            </div>
+
+            <div class="sellers__cart">
+              <div class="sellers__img">
+                <picture>
+                  <source srcset="img/boots.webp" type="image/webp" />
+                  <img src="img/head.jpg" alt="" />
+                </picture>
+              </div>
+              <h6>Beanie</h6>
+              <p>green</p>
+              <div>
+                <span class="sellers__price">39.99$</span>
+                <span class="sellers__price">29.99$</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <section class="customrs">
-        <div class="container">
-            <div class="customers__main">
-                <div class="customers__main__title">
-                    <h1>What Our Customers Have to Say</h1>
-                    <p>Couple of Words About This Stories Section</p>
+    <section class="customers">
+      <div class="container">
+        <div class="customers__main">
+          <div class="customers__title">
+            <h1>What Our Customers Have to Say</h1>
+            <p>Couple of Words About This Stories Section</p>
+          </div>
+          <div class="customers__all-coments">
+            <div class="customers__el">
+              <div class="df">
+                <div class="customers__photo">
+                  <picture>
+                    <source srcset="img/customers1.webp" type="image/webp" />
+                    <img src="img/customers1.jpg" alt="" />
+                  </picture>
                 </div>
-                <div class="customers__main__all-coments">
-                    <div class="customers__main__all-coments__el">
-                        <div class="customers__main__all-coments__el__top">
-                            <div class="customers__main__all-coments__el__top__photo">
-                                
-                                <picture>
-                                    <source srcset="img/customers1.webp" type='image/webp'>
-                                    <img src="img/customers1.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="customers__main__all-coments__el__top__title">
-                                <h5>Cella</h5>
-                                <p>UX Expert</p>
-                            </div>
-                        </div>
-                        <p class="customers__main__all-coments__el__text">This I have produced as a scantling of Jack’s
-                            great eloquence and the force of his reasoning upon such abstruse matters.</p>
-
-
-                    </div>
-                    <div class="customers__main__all-coments__el">
-                        <div class="customers__main__all-coments__el__top">
-                            <div class="customers__main__all-coments__el__top__photo">
-                                
-                                <picture>
-                                    <source srcset="img/customers2.webp" type='image/webp'>
-                                        <img src="img/customers2.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="customers__main__all-coments__el__top__title">
-                                <h5>Cella</h5>
-                                <p>UX Expert</p>
-                            </div>
-                        </div>
-                        <p class="customers__main__all-coments__el__text">Looking cautiously round, to ascertain that
-                            they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-
-
-                    </div>
-                    <div class="customers__main__all-coments__el">
-                        <div class="customers__main__all-coments__el__top">
-                            <div class="customers__main__all-coments__el__top__photo">
-                                <picture>
-                                    <source srcset="img/customers3.webp" type='image/webp'>
-                                    <img src="img/customers3.jpg" alt="">
-                                </picture>
-                            </div>
-                            <div class="customers__main__all-coments__el__top__title">
-                                <h5>Cella</h5>
-                                <p>UX Expert</p>
-                            </div>
-                        </div>
-                        <p class="customers__main__all-coments__el__text">This sounded a very good reason, and Alice was
-                            quite pleased to know it. 'I never thought of that before!' she said.</p>
-
-
-                    </div>
+                <div class="customers__title">
+                  <h5>Cella</h5>
+                  <p>UX Expert</p>
                 </div>
+              </div>
+              <p class="customers__text">
+                This I have produced as a scantling of Jack’s great eloquence
+                and the force of his reasoning upon such abstruse matters.
+              </p>
             </div>
+            <div class="customers__el">
+              <div class="df">
+                <div class="customers__photo">
+                  <picture>
+                    <source srcset="img/customers2.webp" type="image/webp" />
+                    <img src="img/customers2.jpg" alt="" />
+                  </picture>
+                </div>
+                <div class="customers__title">
+                  <h5>Cella</h5>
+                  <p>UX Expert</p>
+                </div>
+              </div>
+              <p class="customers__text">
+                This I have produced as a scantling of Jack’s great eloquence
+                and the force of his reasoning upon such abstruse matters.
+              </p>
+            </div>
+            <div class="customers__el">
+              <div class="df">
+                <div class="customers__photo">
+                  <picture>
+                    <source srcset="img/customers3.webp" type="image/webp" />
+                    <img src="img/customers3.jpg" alt="" />
+                  </picture>
+                </div>
+                <div class="customers__title">
+                  <h5>Cella</h5>
+                  <p>UX Expert</p>
+                </div>
+              </div>
+              <p class="customers__text">
+                This I have produced as a scantling of Jack’s great eloquence
+                and the force of his reasoning upon such abstruse matters.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer class="footer">
-        <div class="container">
-            <div class="footer__nav">
-                <div class="footer__nav__logo">
-                    Portland
-                </div>
+      <div class="container">
+        <div class="footer__nav">
+          <div class="footer__logo">Portland</div>
 
-                <div class="footer__nav__networks">
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-google-plus-g"></i></a>
-                    
-                </div>
-            </div>
-            <div class="footer__privacy">
-                <p>She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for
-                    having been born on a Friday.</p>
-                <div class="footer__privacy__rigth">
-                    <span>Privacy Policy</span> <span>Terms and Conditions</span>
-                </div>
-            </div>
+          <div class="footer__networks">
+            <a href=""><i class="fab fa-twitter footer__item"></i></a>
+            <a href=""><i class="fab fa-facebook-f footer__item"></i></a>
+            <a href=""><i class="fab fa-google-plus-g footer__item"></i></a>
+          </div>
         </div>
+        <div class="footer__privacy">
+          <p>
+            She gave my mother such a turn, that I have always been convinced I
+            am indebted to Miss Betsey for having been born on a Friday.
+          </p>
+          <div class="footer__rigth">
+            <span class="footer__policy">Privacy Policy</span>
+            <span class="footer__policy">Terms and Conditions</span>
+          </div>
+        </div>
+      </div>
     </footer>
     <script type="module" src="script/shuffle.js"></script>
     <script type="module" src="script/content.js"></script>
@@ -501,6 +514,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="script/side-menu.js"></script>
     <script src="script/script.js"></script>
-</body>
-
+  </body>
 </html>

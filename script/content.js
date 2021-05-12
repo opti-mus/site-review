@@ -69,18 +69,18 @@ export const items = shuffle([
 
 function _toHTML(opt) {
   return `
-    <div class="products__el" data-product=${opt.id}>
-      <i class="products__el__photo">
+    <div class="products-el products__el" data-product=${opt.id}>
+      <i class="products-el__photo">
           <picture>
               <source srcset=${opt.imgURL}.webp type='image/webp'>
               <img src=${opt.imgURL}.jpg alt="">
           </picture>
       </i>
-      <div class="products__el__title">${opt.title}</div>
-      <div class="products__el__desc">
-        <div class="products__el__check-color">${opt.color}</div>
-        <div class="products__el__price">${opt.price}</div>
-        <i class="fas fa-shopping-cart products__el__cart" data-content=${opt.id}></i>
+      <div class="products-el__title">${opt.title}</div>
+      <div class="products-el__desc">
+        <div class="products-el__check-color">${opt.color}</div>
+        <div class="products-el__price">${opt.price}</div>
+        <i class="fas fa-shopping-cart products-el__cart" data-content=${opt.id}></i>
       </div>
       
     </div>

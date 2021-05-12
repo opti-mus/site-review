@@ -41,7 +41,6 @@ function updateIcon(added) {
   let iconsCart = document.querySelectorAll('[data-content]')
   let icons = [...iconsCart]
 
-
   icons.forEach((el) => {
     let idx = el.getAttribute('data-content')
 

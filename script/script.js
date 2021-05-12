@@ -1,4 +1,3 @@
-
 let pagination = document.querySelectorAll('.pages__list ul li')
 
 function clearClass(a, i, clz) {
@@ -47,7 +46,7 @@ tns({
   controls: false,
   slideBy: 'page',
   autoplay: false,
-  navContainer: '.header__slider__all-selector',
+  navContainer: '.slider__all-selector',
   autoWidth: false,
   preventScrollOnTouch: 'auto',
   swipeAngle: false,

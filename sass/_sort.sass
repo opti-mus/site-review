@@ -1,0 +1,88 @@
+.sort
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  min-height: 60px
+  background: #fff
+  border-radius: 5px
+  padding: 5px  
+  &__left
+    border-right: 2px solid #f0f2f7
+    padding-right: 3px
+    height: 100%
+    display: flex
+    align-items: center
+    text-transform: uppercase
+    font-size: 11px
+    & span
+        white-space: nowrap
+  &__match
+    display: block
+    border: none
+    margin: 0
+    outline: none
+    color: #343e5c
+    font-weight: bold
+    font-size: 11px
+    &:focus
+        outline: none
+        border: none !important
+  &__center
+    display: flex
+    align-items: center
+    justify-content: space-around
+    text-transform: uppercase
+    font-size: 11px
+    flex: 1
+  &__keywords
+    display: block
+    max-width: 23%
+    height: 30px !important
+    color: #343e5c
+    border-radius: 30px !important
+    background: #F0F2F7 !important
+    margin: 0
+    &:focus
+        outline: none
+  &__price
+    width: 50px
+    height: 30px !important
+    border-radius: 30px !important
+    background: #F0F2F7 !important
+    margin: 0
+    color: #343e5c
+    &:focus
+        outline: none !important
+    & label
+        margin-bottom: 0
+        color: #343e5c
+  &__check
+    margin: 0
+    margin-right: 5px
+  &__rigth
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 15px
+    text-transform: uppercase
+    font-size: 11px
+    border-left: 2px solid #f0f2f7
+    & span
+        white-space: nowrap
+    & label
+        color: #000000
+        margin: 0
+        margin-right: 10px
+  &__ship
+    display: block
+    border: none
+    margin: 0
+    outline: none
+    text-transform: uppercase
+    color: #343e5c
+    font-weight: bold
+    &:focus
+      outline: none
+      border: none !important
