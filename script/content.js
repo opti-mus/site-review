@@ -9,8 +9,8 @@ class CreateContent {
     this.color = opt.color
     this.id = this.idx()()
   }
-  idx(){
-    return function(){
+  idx() {
+    return function () {
       return count++
     }
   }
@@ -91,8 +91,8 @@ function addToWeb(drawItem, contents) {
   if (!wrapper) return
 
   contents.forEach((element) => {
-    wrapper.insertAdjacentHTML("afterbegin", drawItem(element))
+    wrapper.insertAdjacentHTML('afterbegin', drawItem(element))
   })
 }
-addToWeb(_toHTML,items)
 
+addToWeb(_toHTML, items)
